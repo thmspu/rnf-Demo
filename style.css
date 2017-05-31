@@ -1,0 +1,276 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    -webkit-overflow-scrolling: touch
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: myFirstFont;
+}
+
+div,p,label,a, button, input, select, textarea {
+    outline: 0;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+
+@font-face {
+    font-family: myFirstFont;
+  src:url('Fonts/Jubilat-Regular.otf');
+}
+
+@font-face {
+    font-family: myFirstFont_two;
+  src:url('Fonts/Jubilat-Regular.otf');
+}
+
+@font-face {
+    font-family: myFirstFont_three;
+  src:url('Fonts/Jubilat-Bold.otf');
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+ul {
+    width: 100%;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+
+body {
+    background-color: #E6E6E6;
+}
+
+.tit {
+    color: #464646;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.tit .sub01 {
+    font-size: 40px;
+    font-family: myFirstFont;
+}
+
+.tit .sub02 {
+    font-size: 21px;
+    font-family: myFirstFont_two;
+    margin-top: 5px;
+}
+
+.main {
+    width: 820px;
+    min-height: 300px;
+    margin: 50px auto;
+    background: #FBFBFB;
+    padding: 50px;
+}
+
+.f_icon {
+    display: inline-block;
+    background: url(imgs/f.jpg) no-repeat center center;
+    width: 22px;
+    height: 42px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.n_icon {
+    display: inline-block;
+    background: url(imgs/niao.jpg) no-repeat center center;
+    width: 29px;
+    height: 42px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.f-span {
+    display: inline-block;
+    width: 158px;
+    height: 42px;
+    background-color: #3E5898;
+    color: #fff;
+    float: left;
+}
+
+.n-span {
+    display: inline-block;
+    width: 158px;
+    height: 42px;
+    background-color: #36A8E2;
+    color: #fff;
+    float: left;
+}
+
+.step-tit {
+    font-size: 21px;
+    font-family: Arial;
+    color: #464646;
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+
+.list-01 ul li {
+    float: left;
+    width: 25%;
+    cursor: pointer;
+}
+
+.list-01 ul li:hover .mb,.list-01 ul li.active .mb {
+    display: none;
+}
+
+.list-01 ul li div.sub {
+    height: 200px;
+    background-color: #EBEBEB;
+    margin-left: 9px;
+    margin-right: 9px;
+    position: relative;
+}
+
+.list-01 ul li div.sub .content {
+    margin: 3px;
+    height: 194px;
+    background: #fff;
+    position: absolute;
+}
+
+.mb {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(230,230,230,.5);
+    z-index: 1;
+}
+
+.db-div {
+    width: 181px;
+    height: 45px;
+    background: #fff;
+    line-height: 45px;
+}
+
+.db-div input {
+    margin-left: 30px;
+}
+
+.list-01 ul li:hover .db-div,.list-01 ul li.active .db-div {
+    background-color: #C4C4C4;
+}
+
+.list-01.list-02 ul li div.sub {
+    height: 90px;
+    background: #fff;
+    border: 1px solid #EDEDED;
+    text-align: center;
+    line-height: 80px;
+    font-size: 16px;
+    color: #464646;
+}
+
+.list-02-top {
+    width: 100%;
+    height: 10px;
+    background-color: #D40B26;
+}
+
+.list-01.list-02 ul li:hover div.sub,.list-01.list-02 ul li.active div.sub {
+    background-color: #6B8FA3;
+    color: #fff;
+}
+
+.list-01.list-02 ul li:hover div.sub .list-02-top,.list-01.list-02 ul li.active div.sub .list-02-top {
+    background-color: #424958;
+}
+
+.list-03-left {
+    width: 30px;
+    height: 70px;
+    background-color: #D40B26;
+    float: left;
+    margin-right: 25px;
+}
+
+.list-03 ul li {
+    margin-left: 9px;
+    height: 70px;
+    line-height: 70px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.list-03 ul li:hover,.list-03 ul li.active {
+    background-color: #6B8FA3;
+    color: #fff;
+}
+
+.list-03 ul li:hover .list-03-left,.list-03 ul li.active .list-03-left {
+    background-color: #424958;
+}
+
+.step-bottom {
+    border: 3px solid #EBEBEB;
+    margin-left: 9px;
+    margin-right: 9px;
+    margin-top: 68px;
+    height: 358px;
+}
+
+.step-bottom .wz {
+    float: left;
+    width: 343px;
+    text-align: justify;
+    padding: 36px;
+    color: #464646;
+}
+
+.step-bottom .tp {
+    float: right;
+}
+
+.wz-two {
+    font-size: 21px;
+    font-family: myFirstFont_three;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.mlb {
+    margin-left: 9px;
+    margin-top: 30px;
+    color: #464646;
+    margin-bottom: 30px;
+}
+
+.mlb .txt {
+    margin-bottom: 10px;
+}
+
+li:active{
+    opacity: 0.5;
+}
