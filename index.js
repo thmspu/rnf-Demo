@@ -17,7 +17,6 @@
 	}
 
 	
-
 	$('#resultImage').attr("src","imgs/" + image[imageIndex]);
 	
 	$(function(){
