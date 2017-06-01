@@ -5,11 +5,27 @@
     <meta http-equiv="X-UA-Compatible"  content="IE=edge">
     <title>Page</title>
     <link href="style.css" type="text/css" rel="stylesheet" />
+     <!-- <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '637395473112982',
+      xfbml      :  true,
+      version    : 'v2.9'
+    });
+  };
 
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script> -->
 </head>
 <body>
     <div id="fb-root"></div>
-
+     
     <div class="tit">
         <div class="sub01">Which Republican President Are You? </div>
         <div class="sub02">Take the Quiz and Share Your Results </div>
@@ -202,7 +218,7 @@
         </div>
     </form>
 
-    <div class="step-bottom clearfix result" >
+    <div class="step-bottom clearfix result" id="widget">
         <div class="wz">
             <div>
                 Which Republican President Are You? 
@@ -220,7 +236,7 @@
     </div>
     <div class="main-left-top mlb result" >
         <div class="txt">SHARE YOUR RESULTS </div>
-        <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"><span class="f-span">
+        <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small" data-mobile-iframe="true" id="btnSave"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://htmlpreview.github.io/?https://github.com/thmspu/rnf-Demo/blob/master/index.html"><span class="f-span">
             <i class="f_icon"></i>(100)
         </span></a></div>
         <a class="twitter-share-button"
@@ -238,20 +254,10 @@
     <div style="clear:both;"></div>
 </div>
 </div>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
 <script src="jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
-    $(function(){
-        $("li").click(function(){
-            console.log($(this).className)
-            $(this).parent().find("li").each(function(){
-                $(this).prop("class", "");
-                $(this).find("input").prop("checked", "");
-            });
-            $(this).prop("class", "active");
-            $(this).find("input").prop("checked", "1");
-        });
-    });
+
 </script>
 <script src="index.js"></script>
 </body>
